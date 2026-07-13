@@ -1,3 +1,5 @@
+import { fetchGithubData } from './github-projects.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Portafolio: app.js cargado');
 
@@ -5,12 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
       const href = a.getAttribute('href');
-      if (!href || href === '#') return;
+      if (!href || href === '#') {
+        e.preventDefault();
+        return;
+      }
       const el = document.querySelector(href);
       if (el) {
         e.preventDefault();
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // cerrar menú en móvil si está abierto
         document.body.classList.remove('nav-open');
       }
     });
@@ -22,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('nav-open');
   });
 
-  // Fix header when scrolling (add shadow)
   const header = document.getElementById('site-header');
   const onScroll = () => {
     if (window.scrollY > 10) header.classList.add('scrolled'); else header.classList.remove('scrolled');
   };
   window.addEventListener('scroll', onScroll);
 
+  fetchGithubData();
 });

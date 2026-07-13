@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tobias Godoy | Python Backend Developer</title>
-  <meta name="description" content="Portfolio profesional de Tobias Godoy, Python Backend Developer especializado en FastAPI, PostgreSQL, APIs REST y automatización.">
+  <meta name="description" content="Portfolio profesional de Tobias Godoy, Python Backend Developer especializado en FastAPI, PostgreSQL, APIs REST y automatización. Fundador y desarrollador principal de Vision-AR.">
   <meta name="author" content="Tobias Godoy">
   <meta property="og:title" content="Tobias Godoy | Python Backend Developer">
-  <meta property="og:description" content="Portfolio profesional de Tobias Godoy, Python Backend Developer especializado en FastAPI, PostgreSQL, APIs REST y automatización.">
+  <meta property="og:description" content="Conocé mi experiencia, Vision-AR y mis proyectos públicos desarrollados con Python, FastAPI y PostgreSQL.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/og/portfolio-preview.png">
+  <meta property="og:image" content="/assets/og/portfolio-preview.webp">
   <link rel="icon" href="/assets/logo/logo.svg">
 
   <link rel="stylesheet" href="/css/variables.css">
@@ -98,51 +98,41 @@
       </div>
     </section>
 
-    <section id="proyectos" class="container projects">
-      <h3>Proyectos destacados</h3>
-      <div class="grid">
-        <article class="card project-card">
-          <img src="/assets/logo/vision-ar.png" alt="Vision-AR captura" class="project-image">
-          <h4>Vision-AR</h4>
-          <p>Plataforma de monitoreo de infraestructura tecnológica que centraliza la supervisión de cámaras, dispositivos de red y servidores.</p>
-          <p class="meta">Python · FastAPI · PostgreSQL · JavaScript · HTML · CSS · JWT · Linux</p>
-          <div class="card-actions">
-            <a class="btn" href="#">Ver caso de estudio</a>
-            <a class="btn outline" href="#">Solicitar demo</a>
-          </div>
-        </article>
-        
-        <article class="card project-card">
-          <img src="/assets/images/telegram-audit/bot.png" alt="Telegram Audit Bot - chat" class="project-image">
-          <h4>Python Telegram Audit Bot</h4>
-          <p>Bot de Telegram para consultar y resumir información de auditoría almacenada en PostgreSQL. Genera reportes Excel y envía archivos por Telegram.</p>
-          <p class="meta">Python · python-telegram-bot · PostgreSQL · pandas · openpyxl · python-dotenv</p>
-          <div class="card-actions">
-            <a class="btn" href="#">Ver proyecto</a>
-            <a class="btn outline" href="https://github.com/tobiasngodoy-gif/telegram_audit_bot" target="_blank">Ver en GitHub</a>
-          </div>
-        </article>
+    <section id="proyectos" class="container product-main">
+      <div class="product-panel">
+        <div class="product-copy">
+          <span class="product-label">Producto en desarrollo</span>
+          <h2>Vision-AR</h2>
+          <p>Vision-AR es una plataforma web de monitoreo de infraestructura tecnológica desarrollada para centralizar la supervisión de cámaras de videovigilancia, dispositivos de red y servidores desde una única interfaz.</p>
+          <p>Como fundador y desarrollador principal, participo junto al equipo en el diseño, desarrollo, implementación y evolución continua del producto.</p>
 
-        <article class="card project-card">
-          <img src="/assets/logo/python-network-monitor.png" alt="Python Network Monitor captura" class="project-image">
-          <h4>Python Network Monitor</h4>
-          <p>Sistema de monitoreo de red que verifica conectividad de routers y dispositivos mediante IP y puerto, y envía alertas automáticas por Telegram.</p>
-          <p class="meta">Python · OpenPyXL · Telegram Bot API · Requests</p>
-          <div class="card-actions">
-            <a class="btn" href="https://github.com/tobiasngodoy-gif/network-monitor-bot">Ver proyecto</a>
-            <a class="btn outline" href="https://github.com/tobiasngodoy-gif" target="_blank">Ver GitHub</a>
+          <div class="product-meta">
+            <strong>Tecnologías</strong>
+            <p>Python · FastAPI · PostgreSQL · JavaScript · HTML5 · CSS3 · JWT · Linux</p>
           </div>
-        </article>
 
-        <article class="card project-card">
-          <img src="/assets/logo/email-automation.png" alt="Email Automation captura" class="project-image">
-          <h4>Email Automation</h4>
-          <p>Automatización de correos transaccionales mediante Python e integración con Brevo, SendGrid y Mailgun.</p>
-          <p class="meta">Python · REST APIs · Brevo · SendGrid · Mailgun</p>
-          <div class="card-actions">
-            <a class="btn" href="#">Ver detalles</a>
+          <div class="product-list">
+            <h3>Características resumidas</h3>
+            <ul>
+              <li>Monitoreo centralizado de dispositivos.</li>
+              <li>Gestión de usuarios y roles.</li>
+              <li>Dashboards administrativos.</li>
+              <li>Automatización de alertas.</li>
+              <li>Validación de conectividad y disponibilidad.</li>
+              <li>Arquitectura preparada para múltiples organizaciones.</li>
+              <li>Despliegue y mantenimiento sobre servidores Linux.</li>
+            </ul>
           </div>
-        </article>
+
+          <div class="product-actions">
+            <a class="btn primary" href="https://vision-ar.com.ar" target="_blank" rel="noopener noreferrer">Visitar Vision-AR</a>
+            <a class="btn outline" href="mailto:tobiasngodoy@gmail.com?subject=Consulta%20sobre%20Vision-AR" target="_blank" rel="noopener noreferrer">Contactar</a>
+          </div>
+        </div>
+        <div class="product-visual">
+          <img src="/assets/images/vision-ar/cover.webp" alt="Vision-AR cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="image-placeholder" style="display:none;">Imagen pendiente: assets/images/vision-ar/cover.webp</div>
+        </div>
       </div>
     </section>
 
@@ -170,9 +160,13 @@
     </section>
 
     <section id="github" class="container github-section">
-      <h3>GitHub</h3>
-      <p>Ver mis proyectos en GitHub</p>
-      <a class="btn" href="https://github.com/tobiasngodoy-gif" target="_blank">Ver perfil en GitHub</a>
+      <div class="github-header">
+        <h3>Proyectos en GitHub</h3>
+        <p id="github-state" class="github-state">Cargando proyectos desde GitHub…</p>
+      </div>
+      <p class="github-intro">Estos proyectos públicos muestran soluciones desarrolladas con Python, PostgreSQL, automatización, APIs y herramientas de integración.</p>
+      <div class="github-grid" id="github-grid"></div>
+      <div class="github-actions" id="github-actions"></div>
     </section>
 
     <section id="contacto" class="container contact">
@@ -194,6 +188,6 @@
     <div class="container">© 2026 Tobias Godoy. Todos los derechos reservados. — Desarrollado con HTML, CSS, JavaScript y Python.</div>
   </footer>
 
-  <script src="/js/app.js"></script>
+  <script type="module" src="/js/app.js"></script>
 </body>
 </html>
