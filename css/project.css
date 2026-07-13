@@ -1,0 +1,24 @@
+/* Estilos específicos para páginas de proyecto y placeholders */
+.image-placeholder{
+  width:100%;
+  aspect-ratio:16/9;
+  background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
+  border:2px dashed var(--borders);
+  border-radius:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  font-weight:600;
+}
+
+.project-hero{ display:flex; gap:2rem; align-items:flex-start; margin-bottom:1.5rem; }
+.project-hero .content{ flex:1; }
+.project-hero .visual{ width:420px; }
+
+.project-meta{ color:var(--muted); margin-top:0.5rem; }
+
+.project-gallery{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0.75rem; }
+.project-gallery img{ width:100%; height:auto; border-radius:8px; object-fit:cover; }
+
+@media (max-width:900px){ .project-hero{ flex-direction:column; } .project-hero .visual{ width:100%; } }

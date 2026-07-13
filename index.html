@@ -15,6 +15,7 @@
   <link rel="icon" href="/assets/logo/logo.svg">
   <link rel="stylesheet" href="/css/variables.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/project.css">
   <link rel="stylesheet" href="/css/animations.css">
   <link rel="stylesheet" href="/css/responsive.css">
 </head>
@@ -133,32 +134,52 @@
       <h2>Proyectos destacados</h2>
       <div class="grid">
         <!-- Vision-AR -->
-        <article class="card project-card">
-          <div class="project-badge">Proyecto privado</div>
-          <img src="/assets/images/vision-ar/dashboard.png" alt="Vision-AR dashboard" class="project-image">
-          <h3>Vision-AR</h3>
-          <p>Plataforma web de monitoreo de infraestructura tecnológica desarrollada para centralizar la supervisión de cámaras de videovigilancia, dispositivos de red y servidores desde una única interfaz. Como fundador y desarrollador principal, participo junto al equipo en el diseño, desarrollo, implementación y evolución continua del producto.</p>
-          <p class="meta">Python · FastAPI · PostgreSQL · JavaScript · HTML5 · CSS3 · JWT · Linux</p>
-          <div class="card-actions"><a class="btn" href="#">Ver caso de estudio</a> <a class="btn outline" href="#">Solicitar demo</a></div>
-        </article>
+           <article class="card project-card">
+             <div class="project-badge">Proyecto privado</div>
+             <a href="/projects/vision-ar.html">
+               <img src="/assets/images/vision-ar/cover.webp" alt="Vision-AR cover" class="project-image">
+             </a>
+             <h3>Vision-AR</h3>
+             <p>Plataforma web de monitoreo de infraestructura tecnológica que centraliza la supervisión de cámaras, dispositivos de red y servidores.</p>
+             <p class="meta">Python · FastAPI · PostgreSQL · JavaScript · HTML5 · CSS3 · JWT · Linux</p>
+             <div class="card-actions"><a class="btn" href="/projects/vision-ar.html">Ver caso de estudio</a> <a class="btn outline" href="mailto:tobiasngodoy@gmail.com?subject=Solicitud%20de%20demo%20Vision-AR">Solicitar demo</a></div>
+           </article>
 
         <!-- Python Network Monitor -->
-        <article class="card project-card">
-          <img src="/assets/images/network-monitor/console.png" alt="Python Network Monitor console" class="project-image">
-          <h3>Python Network Monitor</h3>
-          <p>Sistema de diagnóstico y monitoreo de red desarrollado para verificar automáticamente la conectividad de routers y otros dispositivos mediante direcciones IP y puertos definidos en una planilla de datos. Envía alertas automáticas por Telegram.</p>
-          <p class="meta">Python · OpenPyXL · Requests · Telegram Bot API · ThreadPoolExecutor</p>
-          <div class="card-actions"><a class="btn" href="#">Ver proyecto</a> <a class="btn outline" href="https://github.com/tobiasngodoy-gif" target="_blank">Ver en GitHub</a></div>
-        </article>
+           <article class="card project-card">
+             <a href="/projects/python-network-monitor.html">
+               <img src="/assets/images/network-monitor/cover.webp" alt="Python Network Monitor cover" class="project-image">
+             </a>
+             <h4>Python Network Monitor</h4>
+             <p>Sistema de monitoreo de red que verifica la conectividad de routers y dispositivos mediante IP y puerto, y envía alertas automáticas por Telegram.</p>
+             <p class="meta">Python · OpenPyXL · Requests · Telegram Bot API · ThreadPoolExecutor</p>
+             <div class="card-actions">
+               <a class="btn" href="/projects/python-network-monitor.html">Ver caso de estudio</a>
+               <a class="btn outline" href="https://github.com/tobiasngodoy-gif" target="_blank">Ver GitHub</a>
+             </div>
+           </article>
 
         <!-- Email Automation -->
-        <article class="card project-card">
-          <img src="/assets/images/email-automation/flow.png" alt="Email Automation flow" class="project-image">
-          <h3>Email Automation</h3>
-          <p>Automatización desarrollada en Python para gestionar el envío de correos electrónicos transaccionales según las acciones realizadas por los usuarios dentro de una plataforma web. Integrada con Brevo, SendGrid y Mailgun.</p>
-          <p class="meta">Python · REST APIs · Brevo · SendGrid · Mailgun · Git</p>
-          <div class="card-actions"><a class="btn" href="#">Ver detalles</a></div>
-        </article>
+           <article class="card project-card">
+             <a href="/projects/email-automation.html">
+               <img src="/assets/images/email-automation/cover.webp" alt="Email Automation cover" class="project-image">
+             </a>
+             <h4>Email Automation</h4>
+             <p>Automatización desarrollada en Python para gestionar correos transaccionales mediante APIs de Brevo, SendGrid y Mailgun.</p>
+             <p class="meta">Python · REST APIs · Brevo · SendGrid · Mailgun · Git</p>
+             <div class="card-actions"><a class="btn" href="/projects/email-automation.html">Ver caso de estudio</a> <a class="btn outline" href="mailto:tobiasngodoy@gmail.com?subject=Consulta%20sobre%20Email%20Automation">Contactar</a></div>
+           </article>
+        
+          <article class="card project-card">
+            <img src="/assets/images/telegram-audit/bot.png" alt="Telegram Audit Bot - chat" class="project-image">
+            <h4>Python Telegram Audit Bot</h4>
+            <p>Bot de Telegram para consultar y resumir información de auditoría almacenada en PostgreSQL. Genera reportes Excel y envía archivos por Telegram.</p>
+            <p class="meta">Python · python-telegram-bot · PostgreSQL · pandas · openpyxl · python-dotenv</p>
+            <div class="card-actions">
+              <a class="btn" href="#">Ver proyecto</a>
+              <a class="btn outline" href="https://github.com/tobiasngodoy-gif/telegram_audit_bot" target="_blank">Ver en GitHub</a>
+            </div>
+          </article>
       </div>
     </section>
 

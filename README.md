@@ -44,6 +44,8 @@ Tareas pendientes:
 
 - Reemplazar placeholders de imágenes y CV por archivos reales.
 - Añadir capturas finales y diagrama del flujo de Email Automation.
+ - Añadir imágenes y diagramas para Python Telegram Audit Bot.
+ - Completar las descripciones de caso de estudio donde corresponda.
 
 Autor:
 
