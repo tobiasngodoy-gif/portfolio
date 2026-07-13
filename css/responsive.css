@@ -1,0 +1,14 @@
+/* Mobile specific tweaks */
+
+@media (max-width:700px){
+  .hero{ padding:4.5rem 0; }
+  .hero-inner{ padding:0 1rem; }
+  .hero-grid{ display:block; }
+  .hero-visual{ display:none; }
+  .tech-grid{ grid-template-columns:repeat(2,1fr); }
+  .projects .grid{ grid-template-columns:1fr; }
+  .about-grid{ grid-template-columns:1fr; }
+  .main-nav{ display:none; }
+  .nav-toggle{ display:flex; }
+  .nav-open .main-nav{ display:flex; position:fixed; top:var(--header-height); right:0; left:0; background:var(--bg-secondary); flex-direction:column; gap:0; padding:1rem; border-top:1px solid var(--borders); }
+}
