@@ -1,0 +1,18 @@
+
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #0ea5e9; /* azul principal */
+  --text: #e6eef6;
+  --radius: 12px;
+  --container-width: 1100px;
+  --header-height: 72px;
+}
+
+* { box-sizing: border-box; }
+html,body{ height:100%; }
+body { background: var(--bg); color:var(--text); font-family: Inter, system-ui, Arial, sans-serif; margin:0; -webkit-font-smoothing:antialiased; }
+
+/* Import Inter desde Google Fonts cuando no esté instalada */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
